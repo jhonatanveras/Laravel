@@ -24,3 +24,8 @@ Route::get('/contato/{id?}', function ($id = null) {
 Route::post('/contato', function () {
     return "Contato POST";
 });
+
+Route::put('/contato', function () {
+    dd($_POST);
+    return "Contato PUT";
+});

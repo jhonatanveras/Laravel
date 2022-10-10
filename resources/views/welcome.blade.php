@@ -55,6 +55,14 @@
                         </label>
                         <button>Enviar</button>
                     </form>
+                    <form action="/contato" method="post">
+                        {{csrf_field()}}
+                        <label>
+                            <input type="hidden" name="_method" value="put">
+                            <input type="text" name="nome" placeholder="Nome / PUT">
+                        </label>
+                        <button>Enviar</button>
+                    </form>
                 </div>
 
             </div>
